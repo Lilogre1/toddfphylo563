@@ -87,3 +87,16 @@ Get-ChildItem *.fa | ForEach-Object {
 ```
 
 This ensures each file is structurally valid before downstream analysis. I did not receive any negative feedback from these checks, with there being well over 10000 sequences for each fasta file. In the future, I would like to apply a consistent renaming standard to FASTA headers to improve downstream compatibility.
+
+### 
+
+3/10/26
+
+I downloaded and used the MAFFT dockerfile as it was the most easily accessible for this task. I was not able to use conda to install and WSL has issues on my local machine, so I used the docker container at https://hub.docker.com/r/staphb/mafft/ to do the following:
+```powershell
+docker pull staphb/mafft:7.450
+
+docker run --rm -v ${PWD}:/data staphb/mafft:7.450 mafft /data/OG0000000.fa > OG0000000_aligned.fa
+```
+
+This was just a test of one Orthogroup Sequence's alignment. I attached an .rmd file showcasing my work in an earlier commit, which also goes through the relevant/applicable parts as it pertains to the actual work in R for assembling a neighbor-joining tree.
