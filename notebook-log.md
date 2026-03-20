@@ -96,7 +96,44 @@ I downloaded and used the MAFFT dockerfile as it was the most easily accessible 
 ```powershell
 docker pull staphb/mafft:7.450
 
-docker run --rm -v ${PWD}:/data staphb/mafft:7.450 mafft /data/OG0000000.fa > OG0000000_aligned.fa
 ```
 
-This was just a test of one Orthogroup Sequence's alignment. I attached an .rmd file showcasing my work in an earlier commit, which also goes through the relevant/applicable parts as it pertains to the actual work in R for assembling a neighbor-joining tree.
+
+## Maximum Likelihood Step Update (IQ-TREE)
+
+### Overview
+
+In this step, I attempted to perform maximum likelihood phylogenetic inference using IQ-TREE on a previously generated multiple sequence alignment (`OG0000000_aligned.fa`) produced by MAFFT.
+
+---
+
+### Command Used
+
+First I pulled the docekr container via:
+
+```powershell
+docker pull staphb/iqtree2 
+```
+
+I ran IQ-TREE via Docker from the directory containing the alignment file:
+
+```powershell
+docker run --rm -v C:/Users/toddf/toddfphylo563/Data/Results_Mar04_1/Orthogroup_Sequences:/data staphb/iqtree2 iqtree2 -s /data/OG0000000_aligned.fa -m MFP -bb 1000 -nt AUTO
+```
+
+This command mounts the working directory into the container and runs IQ-TREE with:
+
+* automatic model selection (`-m MFP`)
+* bootstrap support (`-bb 1000`)
+* automatic thread detection (`-nt AUTO`)
+
+---
+
+### Issues encountered
+
+The run failed with the following error:
+
+```bash
+ERROR: Unknown sequence format, please use PHYLIP, FASTA, CLUSTAL, MSF, or NEXUS format
+```
+
