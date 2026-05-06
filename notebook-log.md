@@ -488,6 +488,11 @@ t.set_outgroup("rhabditophanes_kr3021")
 
 t.write(outfile="rooted.treefile")
 ```
+The new Newick tree is as follows:
+```Newick IQTree Tree
+(caenorhabditis_angaria:0.1578840406,(((caenorhabditis_auriculariae:0.3139830240,(caenorhabditis_parvicauda:0.4060425325,(heterorhabditis_bacteriophora:0.7473087454,((mesorhabditis_belari:0.2430178497,mesorhabditis_spiculigera:0.3358089989)100:0.3547388954,rhabditophanes_kr3021:1.5200132479)90:0.0785528294)100:0.1605080610)80:0.0466091351)100:0.1186013992,caenorhabditis_bovis:0.2410634839)88:0.0377340757,(((((caenorhabditis_becei:0.0675235884,(caenorhabditis_panamensis:0.0704412208,caenorhabditis_waitukubuli:0.0884971788)100:0.0242727941)100:0.0700039812,caenorhabditis_japonica:0.1843647796)83:0.0181272170,((((caenorhabditis_brenneri:0.0801094075,caenorhabditis_tropicalis:0.0998099043)100:0.0235878016,(((caenorhabditis_briggsae:0.0082673918,caenorhabditis_nigoni:0.0069717822)100:0.0788600085,((caenorhabditis_sinica:0.0703064580,caenorhabditis_tribulationis:0.0455868541)73:0.0083777419,caenorhabditis_zanzibari:0.0357364687)100:0.0539599183)100:0.0393019884,(caenorhabditis_latens:0.0143205989,caenorhabditis_remanei:0.0105675756)100:0.0717334021)100:0.0290901382)100:0.0326751146,caenorhabditis_elegans:0.1067970591)57:0.0119434688,caenorhabditis_inopinata:0.1223135069)100:0.0741032276)77:0.0244697481,caenorhabditis_sulstoni:0.1663692615)100:0.1634655699,caenorhabditis_uteleia:0.1978684135)100:0.0586912158)100:0.1576955918,caenorhabditis_quiockensis:0.0647318457);
+
+```
 
 After running this, I wrote an R script to do neighbor-joining
 ```r
@@ -529,6 +534,12 @@ write.tree(tree_rooted)
 write.tree(tree_rooted, file = "nj_rooted.treefile")
 
 ```
+The Newick tree for the NJ tree was as follows:
+
+```Newick Neighbor-Joining Tree
+((((((((((caenorhabditis_inopinata:0.08021188621,caenorhabditis_elegans:0.07414184409):0.004431227529,(((((caenorhabditis_tribulationis:0.03578330731,caenorhabditis_zanzibari:0.03194864132):0.002017785265,caenorhabditis_sinica:0.05028905048):0.02679746658,(caenorhabditis_briggsae:0.004075015456,caenorhabditis_nigoni:0.008426233036):0.051658347):0.01175535392,(caenorhabditis_latens:0.01423703576,caenorhabditis_remanei:0.006926797894):0.05170809931):0.009549475991,(caenorhabditis_brenneri:0.05436340621,caenorhabditis_tropicalis:0.07113212588):0.01012281464):0.01027561732):0.02565343805,((((caenorhabditis_panamensis:0.05192246121,caenorhabditis_waitukubuli:0.05561648564):0.005184132109,caenorhabditis_becei:0.05393329461):0.03199446399,caenorhabditis_sulstoni:0.1037946519):0.004192856604,caenorhabditis_japonica:0.111671787):0.003639441717):0.05381312432,caenorhabditis_uteleia:0.1303892532):0.0117448394,(caenorhabditis_angaria:0.06808899306,caenorhabditis_quiockensis:0.06935503947):0.06407894919):0.007127270385,caenorhabditis_bovis:0.148988025):0.03069628836,caenorhabditis_auriculariae:0.1684583972):0.006944373942,caenorhabditis_parvicauda:0.2176447515):0.0450228074,((mesorhabditis_belari:0.149814455,mesorhabditis_spiculigera:0.1810145106):0.1146797136,heterorhabditis_bacteriophora:0.3365126412):0.0238874782):0,rhabditophanes_kr3021:0.488524261);
+```
+
 In R, I then compared the nj tree and the IQTree tree
 
 ```r
@@ -540,4 +551,9 @@ ml_tree <- read.tree(r"(\\wsl.localhost\Ubuntu\home\toddf\orthofinder_work\MAFFT
 all.equal(nj_tree, ml_tree)
 RF.dist(nj_tree, ml_tree)
 
+```
+Which output the following:
+```R Output
+[1] FALSE
+[1] 10
 ```
