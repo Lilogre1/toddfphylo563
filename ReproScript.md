@@ -69,6 +69,9 @@ mesorhabditis_belari: PRJEB61636
 mesorhabditis_spiculigera: PRJEB59059
 
 rhabditophanes_kr3021: PRJEB1297
+
+---
+
 Place all downloaded WormBase ParaSite `.fa.gz` proteome files into:
 
 ```text
