@@ -160,6 +160,7 @@ The workflow is ultimately very similar, though, with me beginning with MAFFT do
 wget -qO- https://pixi.sh/install.sh | sh
 ```
 ## MAFFT
+I installed mafft using pixi:
 ```linux
 pixi global install mafft
 ```
