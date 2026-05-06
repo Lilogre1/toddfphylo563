@@ -1,6 +1,8 @@
 ## Reproducible phylogenomics workflow
 
-Software versions & Required Packages:
+---
+### Software versions & Required Packages:
+
 
 #### IQ-TREE (linux): v2.0.7 (Linux 64-bit build, Apr 1 2024)
 #### MAFFT (linux): v7.526 (2024-04-26)
@@ -14,6 +16,8 @@ Software versions & Required Packages:
 #### Docker (windows): v29.0.1, build eedd969
 #### WSL (windows): v2.6.1.0
 #### TreeViewer (windows): 2.2.0
+
+---
 
 ### Input data
 
