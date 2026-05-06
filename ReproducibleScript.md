@@ -242,7 +242,7 @@ results/rooted.treefile
 
 ### Step 10 - compare trees
 
-As seen in the above .rmd file, the Robinson–Foulds distance between the rooted Neighbor-Joining and IQ-TREE topologies was:
+As seen in the above .rmd file, the Robinson-Foulds distance between the rooted Neighbor-Joining and IQ-TREE topologies was:
 
 ```text
 RF distance = 10
