@@ -133,14 +133,6 @@ Backup[ ]of[ ]*.numbers/
 *.js
 *.ttf
 
-### sequences
-*.aln
-*.fna
-*.faa
-*.fasta
-*.fa
-*.dat
-*.paml
 
 ### Mathematica
 *.nb
