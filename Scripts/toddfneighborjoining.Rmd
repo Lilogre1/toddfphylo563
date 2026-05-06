@@ -1,0 +1,71 @@
+
+---
+title: "NJ Trees from Concatenated Orthologue FASTA"
+output: html_document
+---
+
+
+
+## Tree
+
+```{r}
+library(ape)
+library(phangorn)
+
+#read concatenated protein alignment
+alignment <- read.phyDat(
+  "C:/Users/toddf/toddfphylo563/concatenated.fa", #ADJUST FOR YOUR FILEPATH
+  format = "fasta",
+  type = "AA"
+)
+
+#ML distance matrix
+dist_matrix <- dist.ml(alignment)
+
+#neighbor joining tree
+tree <- NJ(dist_matrix)
+
+#root on outgroup
+tree_rooted <- root(
+  tree,
+  outgroup = "rhabditophanes_kr3021",
+  resolve.root = TRUE
+)
+
+# spread out tree visually
+plot(
+  main="Neighbor-Joining Tree",
+  tree_rooted,
+  cex = 0.7,
+  no.margin = FALSE,
+  
+)
+
+#print newick text to console
+write.tree(tree_rooted)
+
+#newick file
+write.tree(tree_rooted, file = "nj_rooted.treefile")
+
+```
+```{r}
+library(ape)
+
+nj_tree <- read.tree(r"(C:\Users\toddf\toddfphylo563\nj_rooted.treefile)") #ADJUST FOR YOUR FILEPATH
+ml_tree <- read.tree(r"(\\wsl.localhost\Ubuntu\home\toddf\orthofinder_work\MAFFTIQTree\rooted.treefile)") #ADJUST FOR YOUR FILEPATH
+
+all.equal(nj_tree, ml_tree)
+RF.dist(nj_tree, ml_tree)
+
+```
+
+
+```{r}
+tree <- read.tree(r"(\\wsl.localhost\Ubuntu\home\toddf\orthofinder_work\rooted.treefile)") #ADJUST FOR YOUR FILEPATH
+plot(
+  main="IQTree Tree",
+  tree,
+  cex = 0.7,
+  no.margin = FALSE,
+  )
+```
