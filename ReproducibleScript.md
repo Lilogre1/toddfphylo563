@@ -1,4 +1,4 @@
-## Reproducible phylogenomics workflow
+## Reproducible phylogenetics Workflow
 
 ---
 ### Software versions & Required Packages:
