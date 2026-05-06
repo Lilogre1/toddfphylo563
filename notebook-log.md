@@ -8,31 +8,58 @@ The goal is to identify shared genes across species and use them to reconstruct 
 The species and their respective BioProject tags are as follows:
 
 caenorhabditis_angaria: PRJNA51225
+
 caenorhabditis_auriculariae: PRJEB40642
+
 caenorhabditis_becei: PRJEB28243
+
 caenorhabditis_bovis: PRJEB34497
+
 caenorhabditis_brenneri: PRJNA20035
+
 caenorhabditis_briggsae: PRJNA10731
+
 caenorhabditis_elegans: PRJNA13758
+
 caenorhabditis_inopinata: PRJDB5687
+
 caenorhabditis_japonica: PRJNA12591
+
 caenorhabditis_latens: PRJNA248912
+
 caenorhabditis_nigoni: PRJNA384657
+
 caenorhabditis_panamensis: PRJEB28259
+
 caenorhabditis_parvicauda: PRJEB12595
+
 caenorhabditis_quiockensis: PRJEB11354
+
 caenorhabditis_remanei: PRJNA577507
+
 caenorhabditis_sinica: PRJNA194557
+
 caenorhabditis_sulstoni: PRJEB12601
+
 caenorhabditis_tribulationis: PRJEB12608
+
 caenorhabditis_tropicalis: PRJNA53597
+
 caenorhabditis_uteleia: PRJEB12600
+
 caenorhabditis_waitukubuli: PRJEB12602
+
 caenorhabditis_zanzibari: PRJEB12596
+
 heterorhabditis_bacteriophora: PRJNA13977
+
 mesorhabditis_belari: PRJEB61636
+
 mesorhabditis_spiculigera: PRJEB59059
+
 rhabditophanes_kr3021: PRJEB1297
+
+
 
 
 
