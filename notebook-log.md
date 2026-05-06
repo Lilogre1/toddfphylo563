@@ -569,5 +569,8 @@ Software versions:
 - MAFFT: v7.526 (2024-04-26)
 - OrthoFinder: v3.0.1b1
 - R: v4.4.1 (2024-06-14, "Race for Your Life")
+- Python: v3.12.3
 - ape: v5.8.1
 - phangorn: v2.12.1
+- ete3: v3.1.3
+- pandas: v3.0.2
