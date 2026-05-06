@@ -11,7 +11,7 @@ The goal is to identify shared genes across species and use them to reconstruct 
 
 All proteome files were downloaded as `.fa.gz` archives. To keep the workflow reproducible and organized, I created a dedicated subdirectory inside the project folder to store the extracted FASTA files.
 
-```powershell
+```{powershell}
 #create subfolder for extracted FASTA files
 $dest = Join-Path $PWD "extracted"
 if (!(Test-Path $dest)) {
