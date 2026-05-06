@@ -558,6 +558,6 @@ Which output the following:
 And here are images of the respective plots, generated in R:
 <img width="585" height="325" alt="image" src="https://github.com/user-attachments/assets/34e12cde-6ab5-4c73-ae52-4b3f7dee7b84" />
 
-<img width="594" height="326" alt="image" src="https://github.com/user-attachments/assets/a5e21541-b606-436f-835b-d9daf22e8f35" />
+<img width="567" height="356" alt="image" src="https://github.com/user-attachments/assets/d7575c3e-f48c-4f80-93d4-2ba52e181822" />
 
 
