@@ -563,4 +563,10 @@ And here are images of the respective plots, generated in R, with the image foll
 <img width="1237" height="690" alt="image" src="https://github.com/user-attachments/assets/d9ea6a7d-d925-4930-a26b-1b206c49910b" />
 
 
-
+Software versions:
+- IQ-TREE: v2.0.7 (Linux 64-bit build, Apr 1 2024)
+- MAFFT: v7.526 (2024-04-26)
+- OrthoFinder: v3.0.1b1
+- R: v4.4.1 (2024-06-14, "Race for Your Life")
+- ape: v5.8.1
+- phangorn: v2.12.1
