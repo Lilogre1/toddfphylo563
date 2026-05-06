@@ -555,9 +555,12 @@ Which output the following:
 [1] FALSE
 [1] 10
 ```
-And here are images of the respective plots, generated in R:
+And here are images of the respective plots, generated in R, with the image following it being the same plot in TreeViewer:
 <img width="585" height="325" alt="image" src="https://github.com/user-attachments/assets/34e12cde-6ab5-4c73-ae52-4b3f7dee7b84" />
+<img width="1713" height="971" alt="image" src="https://github.com/user-attachments/assets/57ffe562-97cc-401d-900e-b5683230b42d" />
 
 <img width="567" height="356" alt="image" src="https://github.com/user-attachments/assets/d7575c3e-f48c-4f80-93d4-2ba52e181822" />
+<img width="1237" height="690" alt="image" src="https://github.com/user-attachments/assets/d9ea6a7d-d925-4930-a26b-1b206c49910b" />
+
 
 
