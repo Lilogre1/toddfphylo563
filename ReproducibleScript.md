@@ -21,59 +21,59 @@
 
 ### Input data
 
-The species and their respective BioProject tags are as follows:
+The species and their respective BioProject tags (and links) are as follows, but the data was collected from their respective entries at https://parasite.wormbase.org/ftp.html:
 
-caenorhabditis_angaria: PRJNA51225
+caenorhabditis_angaria: PRJNA51225 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJNA51225
 
-caenorhabditis_auriculariae: PRJEB40642
+caenorhabditis_auriculariae: PRJEB40642 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJEB40642
 
-caenorhabditis_becei: PRJEB28243
+caenorhabditis_becei: PRJEB28243 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJEB28243
 
-caenorhabditis_bovis: PRJEB34497
+caenorhabditis_bovis: PRJEB34497 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJEB34497
 
-caenorhabditis_brenneri: PRJNA20035
+caenorhabditis_brenneri: PRJNA20035 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJNA20035
 
-caenorhabditis_briggsae: PRJNA10731
+caenorhabditis_briggsae: PRJNA10731 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJNA10731
 
-caenorhabditis_elegans: PRJNA13758
+caenorhabditis_elegans: PRJNA13758 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJNA13758
 
-caenorhabditis_inopinata: PRJDB5687
+caenorhabditis_inopinata: PRJDB5687 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJDB5687
 
-caenorhabditis_japonica: PRJNA12591
+caenorhabditis_japonica: PRJNA12591 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJNA12591
 
-caenorhabditis_latens: PRJNA248912
+caenorhabditis_latens: PRJNA248912 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJNA248912
 
-caenorhabditis_nigoni: PRJNA384657
+caenorhabditis_nigoni: PRJNA384657 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJNA384657
 
-caenorhabditis_panamensis: PRJEB28259
+caenorhabditis_panamensis: PRJEB28259 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJEB28259
 
-caenorhabditis_parvicauda: PRJEB12595
+caenorhabditis_parvicauda: PRJEB12595 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJEB12595
 
-caenorhabditis_quiockensis: PRJEB11354
+caenorhabditis_quiockensis: PRJEB11354 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJEB11354
 
-caenorhabditis_remanei: PRJNA577507
+caenorhabditis_remanei: PRJNA577507 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJNA577507
 
-caenorhabditis_sinica: PRJNA194557
+caenorhabditis_sinica: PRJNA194557 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJNA194557
 
-caenorhabditis_sulstoni: PRJEB12601
+caenorhabditis_sulstoni: PRJEB12601 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJEB12601
 
-caenorhabditis_tribulationis: PRJEB12608
+caenorhabditis_tribulationis: PRJEB12608 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJEB12608
 
-caenorhabditis_tropicalis: PRJNA53597
+caenorhabditis_tropicalis: PRJNA53597 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJNA53597
 
-caenorhabditis_uteleia: PRJEB12600
+caenorhabditis_uteleia: PRJEB12600 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJEB12600
 
-caenorhabditis_waitukubuli: PRJEB12602
+caenorhabditis_waitukubuli: PRJEB12602 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJEB12602
 
-caenorhabditis_zanzibari: PRJEB12596
+caenorhabditis_zanzibari: PRJEB12596 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJEB12596
 
-heterorhabditis_bacteriophora: PRJNA13977
+heterorhabditis_bacteriophora: PRJNA13977 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJNA13977
 
-mesorhabditis_belari: PRJEB61636
+mesorhabditis_belari: PRJEB61636 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJEB61636
 
-mesorhabditis_spiculigera: PRJEB59059
+mesorhabditis_spiculigera: PRJEB59059 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJEB59059
 
-rhabditophanes_kr3021: PRJEB1297
+rhabditophanes_kr3021: PRJEB1297 https://ngdc.cncb.ac.cn/bioproject/browse/insdc/PRJEB1297
 
 ---
 
