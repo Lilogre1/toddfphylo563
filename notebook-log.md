@@ -362,8 +362,6 @@ iqtree2 -s concatenated.fa -m MFP -bb 1000 -safe
 ```
 
 ```Linux output
-what do I do now
-
 Akaike Information Criterion:           LG+R5
 Corrected Akaike Information Criterion: LG+R5
 Bayesian Information Criterion:         LG+R4
