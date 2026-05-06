@@ -137,23 +137,34 @@ orthofinder_out/Results_*/Single_Copy_Orthologue_Sequences/
 
 ### Step 4 - align single-copy orthologs with MAFFT
 
+Adjust the Results_* in the following command to match the actual one you're intending to run. For me, this was Apr_27
 ```bash
 mkdir -p aligned
 
-for f in orthofinder_out/Results_*/Single_Copy_Orthologue_Sequences/*.fa; do
+for f in orthofinder_out/Results_*/Single_Copy_Orthologue_Sequences/*.fa; do 
     base=$(basename "$f" .fa)
     mafft --auto "$f" > "aligned/${base}_aligned.fa"
 done
 ```
 
+This creates:
+
+```text
+aligned_renamed/
+```
+
+Which should contain 20 aligned orthologues.
+
 ---
 
 ### Step 5 - rename ortholog headers
 
-Run:
+Again, speciesmap.py 's ORTHOGROUPS_FILE path to your orthofinder output's specific Results_* entry.
+
+Run the following:
 
 ```bash
-python scripts/speciesmap.py
+python3 scripts/speciesmap.py
 ```
 
 This creates:
@@ -169,7 +180,7 @@ aligned_renamed/
 Run:
 
 ```bash
-python scripts/concatenate.py
+python3 scripts/concatenate.py
 ```
 
 Output:
@@ -201,7 +212,7 @@ LG+R4
 Run:
 
 ```bash
-python scripts/rerooting_tree.py
+python3 scripts/rerooting_tree.py
 ```
 
 Outgroup:
@@ -231,3 +242,14 @@ As seen in the above .rmd file, the Robinson–Foulds distance between the roote
 ```text
 RF distance = 10
 ```
+
+### Step 11 - TreeViewer and Visual Comparisons
+
+I then loaded my trees into TreeViewer and made images of them in my .rmd file.
+
+<img width="585" height="325" alt="image" src="https://github.com/user-attachments/assets/34e12cde-6ab5-4c73-ae52-4b3f7dee7b84" />
+<img width="1713" height="971" alt="image" src="https://github.com/user-attachments/assets/57ffe562-97cc-401d-900e-b5683230b42d" />
+
+<img width="567" height="356" alt="image" src="https://github.com/user-attachments/assets/d7575c3e-f48c-4f80-93d4-2ba52e181822" />
+<img width="1237" height="690" alt="image" src="https://github.com/user-attachments/assets/d9ea6a7d-d925-4930-a26b-1b206c49910b" />
+
