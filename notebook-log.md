@@ -555,3 +555,9 @@ Which output the following:
 [1] FALSE
 [1] 10
 ```
+And here are images of the respective plots, generated in R:
+<img width="585" height="325" alt="image" src="https://github.com/user-attachments/assets/34e12cde-6ab5-4c73-ae52-4b3f7dee7b84" />
+
+<img width="594" height="326" alt="image" src="https://github.com/user-attachments/assets/a5e21541-b606-436f-835b-d9daf22e8f35" />
+
+
